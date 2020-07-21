@@ -82,8 +82,38 @@
    AJAX stands for Asynchronous JavaScript and XML. AJAX is a new technique for creating better, faster, and more interactive web applications with the help of XML, HTML, CSS, and Java Script. Ajax uses XHTML for content, CSS for presentation, along with Document Object Model and JavaScript for dynamic content display.
 
 ## Iterate Array
-1. map(), filter(), reduce()
-2. forEach
+   Common Array:
+   ```javascript
+    const array = ['some', 'words', 'in', 'the', 'array'];
+   ```
+
+1. forEach
+   ```javascript
+    complete_string = '';
+
+    array.forEach(function(array_element){
+       complete_string = complete_string + " " + array_element;
+    })
+   ```
+2. map(), filter(), reduce()
+
+   `map()` returns an array result after applying the inner function on all the array elements.
+   ```javascript
+    var new_array = array.map((array_element) => array_element.length>2);
+   ```
+   then the `new_array = [true,true,false,true,true]`
+
+   `filter()` will filter out and return the result according to the function applied.
+   ```javascript
+    var new_array = array.filter((array_element) => array_element.length>2);
+   ```
+   then the `new_array = [some,words,the,array]`
+
+   `reduce()` method reduces the array to a single value.
+   ```javascript
+    var new_array = array.reduce((complete_string, array_element) => complete_string = complete_string+ " " + array_element);
+   ```
+   then the `new_array = some words in the array`
 
 ## Object oriented Javascript
 1. object and properties. 
