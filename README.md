@@ -190,3 +190,9 @@
         .catch(evenRejected)
         .finally(console.log("finally is optional"));
    ```
+   
+   # ES6 Basics
+   
+   ## let vs var
+   
+   ## const and immutable
