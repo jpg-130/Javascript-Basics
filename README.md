@@ -1,4 +1,5 @@
 # JAVASCRIPT BASICS
+   Try copy pasting the following code snippets and exxperiment with them and run them to better understand how the code works.
 
 ## Javascript Functions
 1. Function Declaration
@@ -191,8 +192,19 @@
         .finally(console.log("finally is optional"));
    ```
    
-   # ES6 Basics
-   
-   ## let vs var
-   
-   ## const and immutable
+## let vs var
+1. var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped. It can be said that a variable declared with var is defined throughout the program as compared to let.
+   ```javascript
+   var a = 10;
+   function fn_name() {
+      let a = 15;
+      console.log("function block value of a is: " + a);
+   }
+   console.log("out of block value of a is: " + a);
+   ```
+   then the log prints
+   ```
+   function block value of a is: 15
+   out of block value of a is: 10
+   ```
+## const and immutable
